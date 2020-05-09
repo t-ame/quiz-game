@@ -143,7 +143,7 @@
     function evaluateAnswer(event) {
         let buttonClicked = event.target;
 
-        if (!buttonClicked.nodeName == 'button') return;
+        if (buttonClicked.nodeName != 'button') return;
 
         if (!buttonClicked.classList.contains('correct')) {
             buttonClicked.style.backgroundColor = 'red';
