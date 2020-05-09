@@ -1,0 +1,49 @@
+body{
+    background-color: beige;
+}
+
+.headbar{
+    background-color: paleturquoise;
+    color: darkgreen;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.headbar p{
+    margin-block-start: 0px;
+}
+
+.head-title{
+    text-align: center;
+}
+
+#question, #next-button, #result-page{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#answer-options p{
+    text-align: center;
+}
+
+#answer-options p button{
+    background-color: rgb(245, 245, 209);
+    color: black;
+    font-size: 30px;
+    height: 50px;
+    width: 70%;
+}
+
+#answer-counter{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#next-button button{
+    background-color: rgb(12, 145, 145);
+    color: white;
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+}

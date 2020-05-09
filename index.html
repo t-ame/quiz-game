@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="headbar">
+        <p class="head-title">Quiz Game</p>
+    </div>
+
+    <div id="questions-page">
+        <div>
+            <div id="question">
+                <h1 id="question-holder">Q1. How many fishes are in the sea?</h1>
+            </div>
+            <div id="answer-options">
+                <p>
+                    <button class="correct">A. 500 Fishes</button>
+                </p>
+                <p>
+                    <button>B. 500 Fishes</button>
+                </p>
+                <p>
+                    <button>C. 500 Fishes</button>
+                </p>
+                <p>
+                    <button>D. 500 Fishes</button>
+                </p>
+            </div>
+        </div>
+
+        <div id="answer-counter">
+            <h3> You have answered: <span class="correct-count">3</span> of <span class="total-count">5</span> correctly.</h3>
+        </div>
+
+        <div id="next-button">
+            <button id="next">Next</button>
+        </div>
+    </div>
+    <div id="result-page">
+        <div>
+            <h1>You scored: <span class="correct-count">3</span> out of <span class="total-count">5</span></h1>
+        </div>
+        <div>
+            <h2>Your score percentage is <span id="correct-percentage">70</span>%</h2>
+        </div>
+        <div id="next-button">
+            <button id="restart-button">Repeat Game</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
