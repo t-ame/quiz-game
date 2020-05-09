@@ -200,7 +200,7 @@
     const questionsPage = document.getElementById("questions-page");
     const resultsPage = document.getElementById("result-page");
     const correctPercentageDisplay = document.getElementById("correct-percentage");
-    const restartButton = document.getElementById("restart-button");
+    // const afreshButton = document.getElementById("restart-button");
 
 
     const questionCountDisplay = document.getElementsByClassName("total-count");
@@ -212,7 +212,7 @@
 
     // Event listeners
     nextButton.addEventListener("click", showNext);
-    restartButton.addEventListener("click", setDefaultState());
+    // afreshButton.addEventListener("click", restartGame());
     answersHolder.addEventListener("click", evaluateAnswer);
 
 
