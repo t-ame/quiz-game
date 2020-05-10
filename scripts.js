@@ -2,6 +2,7 @@
 
     let currentIndex = 0;
     let correctAnswers = 0;
+    let questionsAnswered = 0;
 
     const questions = [
         {
@@ -113,6 +114,7 @@
 
 
     function showNext() {
+        if (questionsAnswered != currentIndex) return;
         if (currentIndex >= questions.length) {
             questionsPage.style.display = 'none';
             resultsPage.style.display = 'block';
@@ -154,11 +156,13 @@
         highlightCorrectAnswer();
         updateCorrectCountDisplay();
         disableAnswerSelection();
+        ++questionsAnswered;
     }
 
     function setDefaultState() {
         currentIndex = 0;
         correctAnswers = 0;
+        questionsAnswered = 0;
         for (let i = 0; i < questionCountDisplay.length; ++i) {
             questionCountDisplay[i].innerHTML = questions.length;
         }
@@ -200,7 +204,7 @@
     const questionsPage = document.getElementById("questions-page");
     const resultsPage = document.getElementById("result-page");
     const correctPercentageDisplay = document.getElementById("correct-percentage");
-    // const afreshButton = document.getElementById("restart-button");
+    const refreshButton = document.getElementById("restart-button");
 
 
     const questionCountDisplay = document.getElementsByClassName("total-count");
@@ -212,7 +216,7 @@
 
     // Event listeners
     nextButton.addEventListener("click", showNext);
-    // afreshButton.addEventListener("click", restartGame());
+    refreshButton.addEventListener("click", setDefaultState);
     answersHolder.addEventListener("click", evaluateAnswer);
 
 
